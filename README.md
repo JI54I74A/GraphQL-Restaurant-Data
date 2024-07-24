@@ -10,14 +10,59 @@ For running need to initiate npm, by running this command </br>
 Five operations can do using this code in Qraphql Playground</br>
 **READ - single**</br>
 restaurant: This gets a single restaurant based on a provided ID.</br>
+Qraphql Playground Query</br>
+`query findrestaurants($iid:Int=1){
+  restaurant(id: $iid) {
+    name
+    description
+    dishes{
+      name
+      price
+    }
+  }
+}`
 **READ - all**</br>
 restaurants: This gets a list of all restaurants. </br>
+Qraphql Playground Query</br>
+`{
+  restaurants {
+    name
+    description
+    dishes{
+      name
+      price
+    }
+  }
+}`
 **CREATE**</br>
 setrestaurant: This creates a new restaurant. </br>
+Qraphql Playground Mutation</br>
+`mutation setrestaurants {
+  setrestaurant(input: {
+    name: "Granite",
+    description: "American",
+  }) {
+    name
+    description
+  }
+}`
 **DELETE**</br>
 Deleterestaurant: This deletes a restaurant based on the provided id.</br>
+Qraphql Playground Mutation</br>
+`mutation deleterestaurants($iid: Int = 1) {
+  deleterestaurant(id: $iid) {
+    ok
+  }
+}`
 **UPDATE/EDIT**</br>
 editrestaurant: This updates a restaurant based on the provided id.</br>
+Qraphql Playground Mutation</br>
+`mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
+  editrestaurant(id: $idd, name: $name) {
+    name
+    description
+  }
+}`
 # License
 MIT License
 
