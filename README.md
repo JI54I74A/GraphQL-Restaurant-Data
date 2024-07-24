@@ -7,17 +7,17 @@ For running need to initiate npm, by running this command </br>
  To run the code
  `node index.js`
 # Roadmap
-Five operations can do using this code in Qraphql Playground
-**READ - single**
-restaurant: This gets a single restaurant based on a provided ID.
-**READ - all**
-restaurants: This gets a list of all restaurants. 
-**CREATE**
-setrestaurant: This creates a new restaurant. 
-**DELETE**
-Deleterestaurant: This deletes a restaurant based on the provided id.
-**UPDATE/EDIT**
-editrestaurant: This updates a restaurant based on the provided id.
+Five operations can do using this code in Qraphql Playground</br>
+**READ - single**</br>
+restaurant: This gets a single restaurant based on a provided ID.</br>
+**READ - all**</br>
+restaurants: This gets a list of all restaurants. </br>
+**CREATE**</br>
+setrestaurant: This creates a new restaurant. </br>
+**DELETE**</br>
+Deleterestaurant: This deletes a restaurant based on the provided id.</br>
+**UPDATE/EDIT**</br>
+editrestaurant: This updates a restaurant based on the provided id.</br>
 # License
 MIT License
 
