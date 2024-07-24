@@ -11,16 +11,16 @@ Five operations can do using this code in Qraphql Playground</br>
 **READ - single**</br>
 restaurant: This gets a single restaurant based on a provided ID.</br>
 Qraphql Playground Query</br>
-`query findrestaurants($iid:Int=1){</br>
+```query findrestaurants($iid:Int=1){</br>
   restaurant(id: $iid) {</br>
-    name</br>
-    description</br>
-    dishes{</br>
-      name</br>
-      price</br>
-    }</br>
-  }</br>
-}`</br>
+    name
+    description
+    dishes{
+      name
+      price
+    }
+  }
+}```
 **READ - all**</br>
 restaurants: This gets a list of all restaurants. </br>
 Qraphql Playground Query</br>
