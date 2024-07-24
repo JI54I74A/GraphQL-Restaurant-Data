@@ -12,8 +12,8 @@ Five operations can do using this code in Qraphql Playground</br>
 restaurant: This gets a single restaurant based on a provided ID.</br>
 Qraphql Playground Query</br>
 ```
-query findrestaurants($iid:Int=1){</br>
-  restaurant(id: $iid) {</br>
+query findrestaurants($iid:Int=1){
+  restaurant(id: $iid) {
     name
     description
     dishes{
@@ -26,7 +26,8 @@ query findrestaurants($iid:Int=1){</br>
 **READ - all**</br>
 restaurants: This gets a list of all restaurants. </br>
 Qraphql Playground Query</br>
-```{
+```
+{
   restaurants {
     name
     description
@@ -35,11 +36,13 @@ Qraphql Playground Query</br>
       price
     }
   }
-}```</br>
+}
+```
 **CREATE**</br>
 setrestaurant: This creates a new restaurant. </br>
 Qraphql Playground Mutation</br>
-```mutation setrestaurants {
+```
+mutation setrestaurants {
   setrestaurant(input: {
     name: "Granite",
     description: "American",
@@ -47,24 +50,29 @@ Qraphql Playground Mutation</br>
     name
     description
   }
-}```</br>
+}
+```
 **DELETE**</br>
 Deleterestaurant: This deletes a restaurant based on the provided id.</br>
 Qraphql Playground Mutation</br>
-```mutation deleterestaurants($iid: Int = 1) {
+```
+mutation deleterestaurants($iid: Int = 1) {
   deleterestaurant(id: $iid) {
     ok
   }
-}```
+}
+```
 **UPDATE/EDIT**</br>
 editrestaurant: This updates a restaurant based on the provided id.</br>
 Qraphql Playground Mutation</br>
-```mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
+```
+mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
   editrestaurant(id: $idd, name: $name) {
     name
     description
   }
-}```
+}
+```
 # License
 MIT License
 
